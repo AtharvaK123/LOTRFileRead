@@ -2,6 +2,7 @@ import java.util.TreeMap;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class mayTwetnty
 {
@@ -63,8 +64,22 @@ public class mayTwetnty
 		{
 			System.out.println(str + ": " + charFrequency.get(str));
 		}
+			System.out.println();
+			System.out.println();
+			System.out.println();
+		
 
 
+
+		ArrayList<String> avg = new ArrayList<String>();
+		for(String str : charFrequency.keySet())
+		{
+			Double d = ((double)charFrequency.get(str)/26)/100;
+			avg.add((String.valueOf(d)));
+		}
+			System.out.println();
+			System.out.println();
+			System.out.println();
 	}
 
 	public static void main(String[]args)
